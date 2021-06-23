@@ -15,7 +15,7 @@ library(dplyr)
 library(ggplot2)
 library(corrplot)
 
-read.csv("titanic_train.Rdata")
+load("titanic_train.Rdata")
 
 
 #QUESTION 2
