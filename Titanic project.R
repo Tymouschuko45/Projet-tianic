@@ -1,6 +1,6 @@
 ---
   title: "PROJET TITANIC"
-author: "TIMOTHE ET MAXENCE"
+author: "TIMOTHE"
 date: "22 avril 2021"
 output: html_document
 ---
@@ -233,6 +233,8 @@ print(S)
 
 #QUESTION 9
 
+#Predire la probabilité de survie en fonction de l'age, la class et du sex           
+           
 prob_prediction = function(sex, pclass, cAge){
   P_sx = train %>% filter( Survived == 1 & Sex == sex) %>% summarise( nb = sum(Survived) )
   sx = train %>% filter(Sex == sex)
